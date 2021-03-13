@@ -4,10 +4,27 @@ let box = document.getElementById("box"),
     heart = document.querySelectorAll(".heart"),
     oneHeart = document.querySelector(".heart");
 
-console.log(box);
-console.log(btn);
-console.log(btn[0]);
-console.log(circle[2]);
-console.log(heart);
-console.log(oneHeart);
+box.style.backgroundColor = "green";
+btn[1].style.borderRadius = "100%";
 
+circle[0].style.backgroundColor = "red";
+circle[1].style.backgroundColor = "yellow";
+circle[2].style.backgroundColor = "green";
+
+/* for(let i=0; i<heart.length; i++) {
+    heart[i].style.backgroundColor = "blue";
+} */
+
+/* heart.forEach(function(item, i, hearts) {
+    item.style.backgroundColor = "blue";
+});
+ */
+
+let div = document.createElement("div"),
+    text = document.createTextNode("Тут был Чина");
+
+div.classList.add("black");
+
+
+
+console.log(div); 
